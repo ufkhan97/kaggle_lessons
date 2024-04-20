@@ -1,0 +1,88 @@
+# Intro to Programming Cheat Sheet
+### 1. Arithmetic and Variables
+- **Printing Output**:
+  - Use `print()` to display text, numbers, or variable values.
+  - Example: `print("Hello, world!")`
+- **Arithmetic Operations**:
+  - Basic operations include addition (`+`), subtraction (`-`), multiplication (`*`), division (`/`), and exponentiation (`**`).
+- **Comments**:
+  - Begin comments with `#` to annotate code without affecting execution. Useful for documentation.
+- **Variables**:
+  - Store data values.
+  - **Naming Rules**:
+    - No spaces, start with a letter or underscore.
+    - Only alphanumeric characters and underscores allowed.
+  - **Example**:
+    ```python
+    days_per_year = 365
+    hours_per_day = 24
+    total_hours = days_per_year * hours_per_day
+    print(total_hours)
+    ```
+- **Debugging Tip**:
+  - Watch for typos in variable names, which lead to `NameError`.
+
+### 2. Functions
+- **Definition**: A block of code designed to perform a specific task, which can be executed when the function is called.
+- **Basics**:
+  - Defined using `def`, includes a name, and parameters.
+  - Encapsulates code for re-use.
+  - **Example**:
+    ```python
+    def add_three(num):
+        return num + 3
+    ```
+- **Variable Scope**:
+  - Variables declared inside a function are local to that function.
+  - To use a function’s result outside, it must return the value.
+- **Naming Conventions**:
+  - Function names should be lowercase, with words separated by underscores.
+- **Usage**:
+  - Call functions with required parameters, use return value to interact with other parts of your program.
+
+### 3. Data Types
+- **Integers and Floats**:
+  - Integers (`int`) are whole numbers, floats (`float`) have decimal points.
+  - Perform arithmetic operations between these types.
+- **Booleans**:
+  - `True` or `False` values, used to represent the truth value of an expression.
+- **Strings**:
+  - Text data enclosed in quotes.
+  - **Operations**:
+    - Concatenate with `+`, repeat with `*`.
+    - Convert numbers to strings with `str()`.
+- **Type Conversion**:
+  - Convert between types using `int()`, `float()`, and `str()` to ensure correct data operations.
+- **Special Functions**:
+  - `round()` for rounding floats, `len()` for the length of a string.
+
+### 4. Conditions and Conditional Statements
+- **Condition Operators**:
+  - Includes `==`, `!=`, `>`, `<`, `>=`, `<=` for comparing values.
+- **Conditional Logic**:
+  - **Example**:
+    ```python
+    if temperature > 38:
+        print("Fever")
+    elif temperature > 35:
+        print("Normal")
+    else:
+        print("Low temperature")
+    ```
+- **Use Cases**:
+  - Control function outputs or program flow based on data conditions.
+
+### 5. Data Structures (Lists)
+- **List Basics**:
+  - Collections that are ordered, mutable, and indexed.
+  - Defined with square brackets.
+- **Accessing Items**:
+  - Use zero-based indexing.
+  - **Example**:
+    - `my_list[0]` gets the first item, `my_list[-1]` the last.
+- **Manipulating Lists**:
+  - Add items with `.append()`, remove with `.remove()`.
+  - Slice lists using `:` to get sublists.
+- **Operations**:
+  - Get length with `len()`, sum items with `sum()`, find min/max with `min()`/`max()`.
+
